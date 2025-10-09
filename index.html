@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Love Devs</title>
+    <h1>Love Devs</h1>
+</head>
+<body>
+    <h2>-a website made by love for lovers</h2>
+    <br><br><br><br>
+
+        <div class="container">
+        <h1 style="font-size: 25px;">❤️ Love Calculator ❤️</h1>
+        <input type="text" id="name1" placeholder="Enter your name">
+        <input type="text" id="name2" placeholder="Enter his/her name">
+        <button onclick="calculateLove()">Calculate Love</button>
+        <h5 id="result" style="font-size: 17px;"></h5>
+    </div>
+
+
+    <script>
+     function calculateLove() {
+    let name1 = document.getElementById("name1").value;
+    let name2 = document.getElementById("name2").value;
+    if (name1 === "" || name2 === "") {
+        alert("Please enter both names!");
+        return;
+    }
+    let loveScore = Math.floor(Math.random() * 61) + 40;
+    let resultMessage = ` The love of ${name1} & ${name2} is ${loveScore}% `;
+    if (loveScore < 60) {
+        resultMessage += " - Hmm, might need some effort! 😅";
+    } else if (loveScore < 80) {
+        resultMessage += " - Solid match! 🔥";
+    } else {
+        resultMessage += " - True soulmates! 💖";
+    }
+    document.getElementById("result").innerText = resultMessage;
+}</script><br><br><br><br><br><br><br>
+
+<h2>Read some best Love Novels;</h2>
+<div class="pic">
+<a href="https://archive.org/download/3_20240517_20240517_1505/It_Ends_With_Us_A_Novel_-_Colleen_Hoover.pdf"><img src="https://th.bing.com/th/id/OIP.dnNvg-OTEEXxPPU1vytWcAHaLK?rs=1&pid=ImgDetMain"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://archive.org/details/colleen-hoover-it-starts-with-us-simon-schuster-uk-2022"><img src="https://th.bing.com/th/id/OIP.3obWsjVxsaOeDjNt7amM9gHaLg?rs=1&pid=ImgDetMain"></a>
+    <br>
+    <a href="https://archive.org/details/uglylovenovel0000hoov"><img src="https://th.bing.com/th/id/R.c230833ec8393139efb4ab97bf2eecd2?rik=pddVHaUVTRt5yA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-Vxr0Z6f2-Hc%2fVKqyyw7J3FI%2fAAAAAAAACNw%2f9StOsmYfiIY%2fs1600%2f71XqNajxelL._SL1500_.jpg&ehk=r%2bsLRoUEp5Ut3aMBvNU0vrNyC36dGqHTQWRshWnGEdw%3d&risl=&pid=ImgRaw&r=0"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.scribd.com/document/512969081/You-Are-All-I-Need-by-Ravinder-Singh"><img src="https://th.bing.com/th/id/OIP.szylxXWs6GfQ3yIUWp1s6gAAAA?rs=1&pid=ImgDetMain"></a>
+</div>
+</body>
+</html>
