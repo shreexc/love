@@ -29,11 +29,9 @@
         alert("Please enter both names!");
         return;
     }
-    let loveScore = Math.floor(Math.random() * 61) + 40;
+    let loveScore = Math.floor(Math.random() * 81) + 40;
     let resultMessage = ` The love of ${name1} & ${name2} is ${loveScore}% `;
-    if (loveScore < 60) {
-        resultMessage += " - Hmm, might need some effort! 😅";
-    } else if (loveScore < 80) {
+    if (loveScore < 80) {
         resultMessage += " - Solid match! 🔥";
     } else {
         resultMessage += " - True soulmates! 💖";
@@ -50,4 +48,5 @@
 <a href="https://www.scribd.com/document/512969081/You-Are-All-I-Need-by-Ravinder-Singh"><img src="https://th.bing.com/th/id/OIP.szylxXWs6GfQ3yIUWp1s6gAAAA?rs=1&pid=ImgDetMain"></a>
 </div>
 </body>
+
 </html>
